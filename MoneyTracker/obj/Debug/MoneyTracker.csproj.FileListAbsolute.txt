@@ -1,0 +1,12 @@
+c:\users\vlad\documents\visual studio 2015\Projects\MoneyTracker\MoneyTracker\bin\Debug\MoneyTracker.exe.config
+c:\users\vlad\documents\visual studio 2015\Projects\MoneyTracker\MoneyTracker\obj\Debug\MoneyTracker.csprojResolveAssemblyReference.cache
+c:\users\vlad\documents\visual studio 2015\Projects\MoneyTracker\MoneyTracker\obj\Debug\MoneyTracker.Form1.resources
+c:\users\vlad\documents\visual studio 2015\Projects\MoneyTracker\MoneyTracker\obj\Debug\MoneyTracker.Properties.Resources.resources
+c:\users\vlad\documents\visual studio 2015\Projects\MoneyTracker\MoneyTracker\obj\Debug\MoneyTracker.csproj.GenerateResource.Cache
+c:\users\vlad\documents\visual studio 2015\Projects\MoneyTracker\MoneyTracker\bin\Debug\MoneyTracker.exe
+c:\users\vlad\documents\visual studio 2015\Projects\MoneyTracker\MoneyTracker\bin\Debug\MoneyTracker.pdb
+c:\users\vlad\documents\visual studio 2015\Projects\MoneyTracker\MoneyTracker\obj\Debug\MoneyTracker.exe
+c:\users\vlad\documents\visual studio 2015\Projects\MoneyTracker\MoneyTracker\obj\Debug\MoneyTracker.pdb
+c:\users\vlad\documents\visual studio 2015\Projects\MoneyTracker\MoneyTracker\bin\Debug\Newtonsoft.Json.dll
+c:\users\vlad\documents\visual studio 2015\Projects\MoneyTracker\MoneyTracker\bin\Debug\Newtonsoft.Json.xml
+c:\users\vlad\documents\visual studio 2015\Projects\MoneyTracker\MoneyTracker\bin\Debug\Data\AccountsHistory.json
