@@ -1,3 +1,16 @@
 {"Id":"bfaa2a6cf1bf4459a3cc74f095b5f7e3","Amount":19.0}
 {"Id":"addf41a5292e4a05a0f0cc41b50f85cd","Amount":33.0}
 {"Id":"c8a11bb5da4f40d6903531f3f5736ce5","Amount":43.0}
+{"Id":"17eb91756ab24946866bc042f44bb299","Amount":12.0,"Date":"0001-01-01T00:00:00","Category":"food","Note":"first note"}
+{"Id":"076473be43df4b3ca79ece260956ddc4","Amount":777.0,"Date":"0001-01-01T00:00:00","Category":"Food","Note":"second note"}
+{"Id":"270202955358422ba64658ee8e8fb1ee","Amount":444.0,"Date":"0001-01-01T00:00:00","Category":"car","Note":"third"}
+{"Id":"9abce469d80445998b02fb38686ff8cb","Amount":22.0,"Date":"2012-01-12T00:23:00","Category":"wer","Note":"wer"}
+{"Id":"1016f30656b94757820c8344953d9a6c","Amount":555.0,"Date":"2016-05-11T23:36:23.6336456+03:00","Category":"eee","Note":"eee"}
+{"Id":"e04fd2c97ae143d69f4b73f016d64850","Amount":4.0,"Date":"2016-05-11T23:37:01.6365378+03:00","Category":"ee","Note":"wer"}
+{"Id":"baad8477b455458a9f080ba5186f3452","Amount":33.0,"Date":"2016-05-11T00:00:00+03:00","Category":"wer","Note":"wer"}
+{"Id":"63a84758164745ee8f2cb534e9457969","Amount":1.0,"Date":"2016-05-11T00:00:00+03:00","Category":"qwe","Note":"qwe"}
+{"Id":"5e6f079947dd4549b7c6826bf1ff63bd","Amount":34.0,"Date":"2016-05-11T00:00:00+03:00","Category":"er","Note":"wer"}
+{"Id":"ad59189b164044149bc12a3ba3722168","Amount":21.0,"Date":"0001-01-01T00:00:00","Category":"wer","Note":"wer"}
+{"Id":"a962c3327ba944fcbb6c334f58068cc2","Amount":123.0,"Date":"0001-01-01T00:00:00","Category":"ewr","Note":"wer"}
+{"Id":"35672717aeb34bb1872a30b567227d6a","Amount":234.0,"Date":"2016-05-09T00:00:00","Category":"eee","Note":"eee"}
+{"Id":"4ef4040642a3441b83ba3ba7eae53024","Amount":333.0,"Date":"2016-05-01T00:00:00","Category":"ert","Note":"ert"}

@@ -7,7 +7,11 @@ namespace MoneyTracker
 {
     public partial class Form1 : Form
     {
-        private float enteredAmount = 0;
+        private float _enteredAmount = 0;
+        private string _enteredCategory = "";
+        private DateTime _enteredDate;
+        private string _enteredNote = "";
+
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +28,7 @@ namespace MoneyTracker
                 }
                 else
                 {
-                    enteredAmount = float.Parse(textBox1.Text);
+                    _enteredAmount = float.Parse(textBox1.Text);
                 }
             }
             catch (Exception) { }
@@ -32,17 +36,12 @@ namespace MoneyTracker
 
         private void addAmount_Click(object sender, EventArgs e)
         {
-            OutputTransaction transaction = new OutputTransaction(enteredAmount);
+            OutputTransaction transaction = new OutputTransaction(_enteredAmount, _enteredCategory, _enteredDate, _enteredNote);
             List<AccountsHistory> history = AccountsHistory.AddTransactionToAccountsHistory("accountName", transaction);
             Repository.SaveTransactionToFile(transaction);
             Repository.SaveAccountHistoryToFile(history);
             textBox1.Clear();
             textBox1.Select();
-        }
-
-        private void output_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void showTransactions_Click(object sender, EventArgs e)
@@ -52,8 +51,21 @@ namespace MoneyTracker
             {
                 output.AppendText(item + Environment.NewLine);
             }
-
         }
 
+        private void category_TextChanged(object sender, EventArgs e)
+        {
+            _enteredCategory = category_TextBox.Text;
+        }
+
+        private void note_TextChanged(object sender, EventArgs e)
+        {
+            _enteredNote = note_TextBox.Text;
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            _enteredDate = DateTime.Parse(dateTimePicker1.Text);
+        }
     }
 }
