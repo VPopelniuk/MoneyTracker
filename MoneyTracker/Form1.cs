@@ -36,7 +36,7 @@ namespace MoneyTracker
 
         private void addAmount_Click(object sender, EventArgs e)
         {
-            OutputTransaction transaction = new OutputTransaction(_enteredAmount, _enteredCategory, _enteredDate, _enteredNote);
+            OutcomeTransaction transaction = new OutcomeTransaction(_enteredAmount, _enteredCategory, _enteredDate, _enteredNote);
             List<AccountsHistory> history = AccountsHistory.AddTransactionToAccountsHistory("accountName", transaction);
             Repository.SaveTransactionToFile(transaction);
             Repository.SaveAccountHistoryToFile(history);
@@ -46,10 +46,10 @@ namespace MoneyTracker
 
         private void showTransactions_Click(object sender, EventArgs e)
         {
-            string[] items = Repository.GetAllTransactionsFromFile();
-            foreach (string item in items)
+            List<Transaction> items = Repository.GetAllTransactionsFromFile();
+            foreach (Transaction item in items)
             {
-                output.AppendText(item + Environment.NewLine);
+                output.AppendText(item.ToString() + Environment.NewLine);
             }
         }
 

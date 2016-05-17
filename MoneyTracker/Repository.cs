@@ -7,10 +7,17 @@ namespace MoneyTracker
 {
     public class Repository
     {
-        public static string[] GetAllTransactionsFromFile()
+        public static List<Transaction> GetAllTransactionsFromFile()
         {
+
+            List<Transaction> transactions = new List<Transaction>();
             string[] transactionsFromFile = File.ReadAllLines("Data/Transactions.json");
-            return transactionsFromFile;
+            foreach (string item in transactionsFromFile)
+            {
+                IncomeTransaction transaction = JsonConvert.DeserializeObject<IncomeTransaction>(item);
+                transactions.Add(transaction);
+            }
+            return transactions;
         }
 
         public static void SaveTransactionToFile(Transaction transaction)

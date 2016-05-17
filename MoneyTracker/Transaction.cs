@@ -12,26 +12,22 @@ namespace MoneyTracker
 
         public string Id { get; set; }
 
-        public float Amount
-        {
-            get { return _amount; }
-            set
-            {
-                if (value > 0)
-                {
-                    _amount = value;
-                }
-                else
-                {
-                    throw new ArgumentException("Amount should be more than zero!");
-                }
-            }
-        }
+        public virtual float Amount { get; set; }
 
         public DateTime Date
         {
             get { return _date; }
-            set { _date = value; }
+            set
+            {
+                if (value != DateTime.MinValue)
+                {
+                    _date = value;
+                }
+                else
+                {
+                    _date = DateTime.Today;
+                }
+            }
         }
 
         public string Category
@@ -64,6 +60,11 @@ namespace MoneyTracker
         protected static string GenerateID()
         {
             return Guid.NewGuid().ToString("N");
+        }
+
+        public override string ToString()
+        {
+            return string.Format("Id: {0}; Date: {1}; Amount: {2}; Category: {3}; Note: {4}", Id, Date, Amount, Category, Note);
         }
     }
 }

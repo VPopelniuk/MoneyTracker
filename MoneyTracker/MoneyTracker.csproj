@@ -51,7 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountsHistory.cs" />
-    <Compile Include="OutputTransaction.cs" />
+    <Compile Include="IncomeTransaction.cs" />
+    <Compile Include="OutcomeTransaction.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
